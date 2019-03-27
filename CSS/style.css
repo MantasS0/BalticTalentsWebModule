@@ -1,0 +1,39 @@
+section {
+    /*display: inline-block;*/
+    background-color: #FDA7DF;
+    width: 90%;
+    max-width: 900px;
+    background-image: url("img/monkey.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    border-bottom-color: #9980FA;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+
+    border-top: dashed #A3CB38 5px;
+
+    border: 3px solid black;
+
+    border-radius: 10px;
+
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding: 20px 25px 50px;
+
+    box-sizing: border-box;
+
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+p {
+    color: white;
+    width: 50%;
+}
+
+.lightSection{
+    background: none;
+}

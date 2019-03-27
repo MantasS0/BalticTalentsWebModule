@@ -2,6 +2,7 @@
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Antra uzduotis</title>
 </head>
 <body>
@@ -18,56 +19,69 @@
 </ul>
 
 <table>
-    <thead>Automobiles</thead>
-    <tr>
-        <td>Make</td>
-        <td>Model</td>
-        <td>Year</td>
+    <!--<thead>Automobiles</thead>-->
+    <thead>
+    <tr class="head">
+        <th></th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
     </tr>
-    <tr>
+    </thead>
+    <tbody>
+    <tr class="dark">
+        <td>Germany</td>
         <td>Mercedes-Benz</td>
         <td>CLK</td>
         <td>2000</td>
     </tr>
-    <tr>
+    <tr class="light">
+        <td>Germany</td>
         <td>Volkswagen</td>
         <td>Golf mk.4</td>
         <td>1999</td>
     </tr>
-    <tr>
+    <tr class="dark">
+        <td>Germany</td>
         <td>BMW</td>
         <td>5-series</td>
         <td>2014</td>
     </tr>
-    <tr>
+    <tr class="light">
+        <td>Germany</td>
         <td>Porsche</td>
         <td>Macan</td>
         <td>2018</td>
     </tr>
+    </tbody>
 </table>
+<br>
 <form action="/uzduotis2/actionOnSubmit.php" target="_blank">
-    <label>Register your interest</label>
-    <br>
-    <label>Your name:</label>
-    <input name="firstname" type="text" placeholder="Your name here">
-    <br>
-    <label>Your e-mail:</label>
-    <input name="email" type="email" placeholder="Your e-mail here">
-    <br>
-    <label>Vehicle you are interested in:</label>
-    <select name="vehicles">
-        <option value="mercedes" selected>Mercedes-Benz CLK</option>
-        <option value="volkswagen">Volkswagen Golf Mk.4</option>
-        <option value="bmw">BMW 5-series</option>
-        <option value="porsche">Porsche Macan</option>
-    </select>
-    <br>
-    <label>Are you a troll?</label>
-    <input type="radio" name="troll" value="yes"> Yes
-    <input type="radio" name="troll" value="no"> No<br>
-    <input type="submit" value="Submit">
-    <button type="button" onclick="alert('Thank you for your interest.')">Submit for a thank you</button>
-
+    <fieldset>
+        <legend>Register your interest</legend>
+        <div class="formBox">
+            <label class="col-left">Your name:</label>
+            <input class="col-right" name="firstname" type="text" placeholder="Your name here">
+            <br>
+            <label class="col-left">Your e-mail:</label>
+            <input class="col-right" name="email" type="email" placeholder="Your e-mail here">
+            <br>
+            <label class="col-left select">Vehicle you are interested in:</label>
+            <select class="col-right select smaller" name="vehicles">
+                <option value="mercedes" selected>Mercedes-Benz CLK</option>
+                <option value="volkswagen">Volkswagen Golf Mk.4</option>
+                <option value="bmw">BMW 5-series</option>
+                <option value="porsche">Porsche Macan</option>
+            </select>
+            <br>
+            <label class="col-left radio">Are you a troll?</label>
+            <div class="col-right radio">
+                <input type="radio" name="troll" value="yes"> Yes
+                <input type="radio" name="troll" value="no"> No<br>
+            </div>
+        </div>
+    </fieldset>
 </form>
+<button type="button" onclick="alert('Thank you for your interest.')">Submit for a thank you</button>
 </body>
 </html>
