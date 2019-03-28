@@ -1,0 +1,41 @@
+body{
+    text-align: center;
+}
+
+div.heading.one {
+    background-color: #fff97d;
+}
+
+.block.one .heading {
+    background-color: #acfffd;
+    font-size: 26px;
+}
+.heading.heading.heading{
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-decoration: #A3CB38 underline;
+    border: inherit;
+    text-transform: capitalize;
+}
+
+.block{
+    color: #3f7098;
+    border: solid 1px black;
+    text-align: justify;
+    line-height: 1.5;
+    width: 90%;
+    max-width: 800px;
+
+    /*display block tipo elementus centruojame naudojant margin: auto savybe*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*arba*/
+    /*margin: 0px auto 50px;*/
+    /*arba*/
+    margin: auto;
+    margin-bottom: 50px;
+}
+.block.two{
+    /*margin: auto nepadeda iscentruoti inline-block elementu*/
+    display: inline-block;
+}

@@ -1,0 +1,36 @@
+/*.container:hover,.block:hover,.rectangle:hover,.stroked:hover*/
+body *:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+.container{
+    background-color: #90b4d6;
+    width: 600px;
+    height: 400px;
+}
+.container .block{
+    background-color: #3f7098;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+.block.stroked{
+    background-color: #3f7098;
+    width: 150px;
+    height: 150px;
+    margin: 15px 0px 15px 5px;
+    border: black solid 10px;
+}
+.rectangle{
+    background-color: #98076d;
+    width: 400px;
+    height: 150px;
+}
+.rectangle .block{
+    background-color: red;
+    width: 150px;
+    height: inherit;
+}
+.rectangle.stroked{
+    background-color: #A3CB38;
+    margin-top: 25px;
+}
