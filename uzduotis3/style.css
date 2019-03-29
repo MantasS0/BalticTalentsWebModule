@@ -1,6 +1,5 @@
-/*.container:hover,.block:hover,.rectangle:hover,.stroked:hover*/
-body *:hover{
-    background-color: rgba(0,0,0,0.3);
+.block.block.block:hover,.rectangle.rectangle.rectangle:hover,.container.container:hover{
+    background-color: rgba(0,0,0,0.5);
 }
 .container{
     background-color: #90b4d6;
