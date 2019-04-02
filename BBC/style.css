@@ -1,0 +1,98 @@
+body {
+    background-color: #b3f0ee;
+    /*font-family: Pagrindinis, Verdana, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/*@font-face {*/
+/*font-family: 'Pagrindinis';*/
+/*src: url("fonts/roboto/Roboto-regular.ttf");*/
+/*}*/
+
+nav {
+    background-color: #a29bfe;
+    color: white;
+}
+
+nav ul {
+    width: 90%;
+    /*background-color: red;*/
+    max-width: 1000px;
+    margin: auto;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    border-right: rgba(255, 255, 255, 0.3) solid 1px;
+    padding: 15px 20px;
+    font-size: 16px;
+    /*border-spacing: 0;*/
+}
+
+nav ul li:hover {
+    border-bottom: 4px solid rebeccapurple;
+    padding-bottom: 11px;
+    cursor: pointer;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+    font-size: 0;
+    text-align: justify;
+}
+
+main article {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+main article h3 {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+main article p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+main article:nth-of-type(10n + 2),
+main article:nth-of-type(10n + 3) {
+    width: 49%;
+}
+
+main article:nth-of-type(10n + 4),
+main article:nth-of-type(10n + 5),
+main article:nth-of-type(10n + 6) {
+    width: 32%;
+}
+
+main article:nth-of-type(10n + 7),
+main article:nth-of-type(10n + 8),
+main article:nth-of-type(10n + 9),
+main article:nth-of-type(10n + 10) {
+    width: 23.5%;
+}
+
+main article:nth-of-type(10n + 5){
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+main article:nth-of-type(10n + 7),
+main article:nth-of-type(10n + 8),
+main article:nth-of-type(10n + 9)
+{
+    margin-right: 2%;
+}
