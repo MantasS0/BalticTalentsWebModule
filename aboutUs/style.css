@@ -90,12 +90,104 @@ header button {
     outline: none;
 }
 
-header button:active{
-    -webkit-box-shadow: inset 0px 0px 40px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 40px -2px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 40px -2px rgba(0,0,0,0.75);
+header button:active {
+    -webkit-box-shadow: inset 0px 0px 40px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 40px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 40px -2px rgba(0, 0, 0, 0.75);
 }
 
-header button:hover{
+header button:hover {
     background-color: rgba(226, 4, 103, 0.6);
 }
+
+section .inner {
+    width: 90%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 80px 0 110px;
+}
+
+section .inner h3 {
+    font-size: 28px;
+    text-align: center;
+
+}
+
+section .inner h3:after {
+    content: '';
+    display: block;
+    margin: 20px auto 35px;
+    width: 70px;
+    height: 1px;
+    background-color: rgba(110, 4, 90, 0.6);
+}
+
+section .inner > p {
+    max-width: 720px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+
+section .thirdsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+section .thirdsWrapper .third {
+    width: 30%;
+    text-align: center;
+}
+
+section .thirdsWrapper .third img {
+    height: 64px;
+    width: auto;
+    margin-bottom: 25px;
+}
+
+section .thirdsWrapper .third h4 {
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+section .thirdsWrapper .third p {
+    line-height: 1.5;
+    color: #680244;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

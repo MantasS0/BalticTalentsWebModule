@@ -1,0 +1,223 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(12, 234, 255, 0.11);
+}
+
+header div {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #555a5e;
+}
+
+header div h1 {
+    font-size: 24px;
+    padding: 24px 0;
+}
+
+header div nav ul {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+header div nav ul li {
+    box-sizing: border-box;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+header div nav ul li.signInButton {
+    background-color: #0abde3;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h2 + p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 50%;
+    margin: auto;
+}
+
+section.mountains {
+    background-image: url(img/mountains.jpg);
+    background-size: cover;
+    background-position: center;
+    /*background-color: rgba(55, 55, 55, 0.25);*/
+    color: white;
+    text-align: center;
+}
+
+section.mountains h2 {
+    padding-top: 400px;
+}
+
+section.mountains h2:before, section.mountains h2:after {
+    /*background-image: url(img/twitter.svg);*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 15px;*/
+    /*list-style-image: url(img/twitter.svg);*/
+}
+
+section.mountains p {
+    padding-bottom: 100px;
+    margin-top: 25px;
+}
+
+section.about {
+    text-align: center;
+}
+
+section.about h2 {
+    color: #0abde3;
+    margin-top: 80px;
+}
+
+section.about p {
+    color: #555a5e;
+    margin-top: 25px;
+    margin-bottom: 80px;
+}
+
+section.team {
+    background-color: #0abde3;
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+section.team .inner {
+    display: flex;
+    justify-content: center;
+}
+
+section.team .inner .member {
+    margin: 80px 25px;
+    line-height: 1.3;
+}
+
+section.team .inner .member .photo {
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+section.team h4 {
+    margin-top: 10px;
+}
+
+section.team h5 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+section.team button {
+    background: none;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #576574;
+}
+
+footer .inner {
+    width: 70%;
+    margin: auto;
+}
+
+footer .inner .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bababa;
+}
+
+footer .inner .upper .leftSide {
+    color: #EDEDED;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+}
+
+footer .inner .upper .leftSide li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+footer .inner .upper .rightSide {
+    display: flex;
+}
+
+footer .inner .upper .rightSide a {
+    width: 30px;
+    height: 30px;
+    border: #EDEDED 2px solid;
+    border-radius: 50%;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+footer .inner .lower {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer .inner .lower a {
+    text-decoration: none;
+    color: #bababa;
+    font-size: 11px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+footer .inner .lower a:not(:last-child) {
+    border-right: 1px solid #bababa;
+    padding-right: 5px;
+}
+
+footer .inner .lower a:not(:first-child) {
+    padding-left: 5px;
+}
+
+section.gMaps {
+    width: 100%;
+}
+
+section.gMaps {
+    overflow: hidden;
+    background: none;
+}
