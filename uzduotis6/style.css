@@ -65,15 +65,18 @@ section.mountains {
 }
 
 section.mountains h2 {
+    display: flex;
+    text-align: center;
     padding-top: 400px;
+    width: fit-content;
+    margin: auto;
 }
 
 section.mountains h2:before, section.mountains h2:after {
-    /*background-image: url(img/twitter.svg);*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 15px;*/
-    /*list-style-image: url(img/twitter.svg);*/
+    content: '★';
+    font-size: 18px;
+    margin: 7px 5px;
+
 }
 
 section.mountains p {
