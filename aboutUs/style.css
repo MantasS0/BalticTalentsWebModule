@@ -102,7 +102,7 @@ header button:hover {
 
 section .inner {
     width: 90%;
-    max-width: 1060px;
+    max-width: 980px;
     margin: auto;
     padding: 80px 0 110px;
 }
@@ -156,31 +156,146 @@ section .thirdsWrapper .third p {
     color: #680244;
 }
 
+section.team {
+    background-color: #f0f0f0;
+}
 
+.team .thirdsWrapper .third {
+    text-align: left;
+}
 
+.team .thirdsWrapper .third img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
 
+.team .thirdsWrapper .third h4 {
+    margin-bottom: 12px;
+}
 
+.cta {
+    background-image: url(img/bg-img2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 
+}
 
+.cta .inner {
+    width: 90%;
+    max-width: 1060px;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.cta .inner .leftSide {
+    width: 70%;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
 
+.cta .inner .button {
+    width: 30%;
+    background-color: rgba(110, 4, 90, 0.6);
+    color: inherit;
+    font: inherit;
+    border: none;
+    padding: 20px 27px;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    line-height: 1.3;
+}
 
+.cta .inner .leftSide h3 {
+    font-size: 32px;
+    margin-bottom: 13px;
+}
 
+.cta .inner .leftSide p {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
+footer .inner{
+    width: 90%;
+    max-width: 1060px;
+    margin: auto;
+    padding-top: 105px;
+}
 
+footer .inner .footerTop{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(226, 4, 103, 0.6);
+    padding-bottom: 60px;
+}
 
+footer .inner .quarter h4{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
 
+footer .inner .quarter li{
+    color: #d405b4;
+    line-height: 2;
+}
 
+footer .inner .quarter{
+    width: 23%;
+}
 
+footer .inner .quarter p{
+    color: #d405b4;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
+footer .inner .quarter input{
+    background-color: lightgrey;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 43px;
+}
 
+footer .inputWrapper{
+    position: relative;
+}
 
+footer .inputWrapper img{
+    height: 16px;
+    width: auto;
+    position: absolute;
+    cursor: pointer;
+    right: 13px;
+    top: 13px;
+}
 
+footer .footerBottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
 
-
-
-
-
+footer .footerBottom .socialIcon{
+    display: inline-block;
+    margin-left: 10px;
+    height: 32px;
+    width: auto;
+}
 
 
 

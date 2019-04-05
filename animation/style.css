@@ -1,0 +1,156 @@
+.face {
+    width: 500px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #e3e3e3;
+    border-bottom: 5px solid rgba(69, 69, 69, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ear {
+    width: 170px;
+    height: 200px;
+    background-color: #e3e3e3;
+    border-top: 5px solid rgba(69, 69, 69, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+}
+
+.ear.left {
+    left: 50px;
+}
+
+.ear.right {
+    right: 50px;
+    /*animation-name: rotateEar;*/
+    /*animation-duration: 2000ms;*/
+    animation-delay: 500ms;
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: ease-in-out;*/
+
+    animation: rotateEar 2000ms infinite ease-in-out;
+}
+
+/*Akies vyzdis*/
+.eye {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    }
+
+.eye:after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    animation: moveEyeBall 6s infinite ease-in-out;
+}
+
+.eye:before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: rgb(91, 91, 91);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -40px;
+    top: -40px;
+}
+
+.eye.left{
+    top: 150px;
+    left: 100px;
+}
+
+.eye.right{
+    top: 150px;
+    right: 100px;
+}
+
+.nose{
+    width: 60px;
+    height: 30px;
+    border-top: 5px solid rgb(25, 25, 25);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 100px;
+    background-color: rgb(91, 91, 91);
+}
+
+@keyframes rotateEar {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(30deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveEyeBall {
+    0%{
+        left: 10%;
+    }
+
+    30%{
+        left: 50%;
+    }
+
+    60%{
+        left: 20%;
+    }
+
+    80%{
+        left: 60%;
+    }
+
+    100%{
+        left: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

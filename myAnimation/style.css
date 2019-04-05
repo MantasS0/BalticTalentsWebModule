@@ -1,0 +1,224 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-image: url(img/bg-christmas.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: bodyBgTransition 5000ms ease-in-out;
+    animation-delay: 5000ms;
+    animation-fill-mode: forwards;
+}
+
+h1, h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: 30px 0 50px;
+    animation: headerFade 2000ms ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+body h3 {
+    font-size: 24px;
+}
+
+.inner {
+    height: auto;
+}
+
+.inner .presentBox {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+.inner .presentBox .surprise {
+    background-image: url(img/spanishInquisition.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spanishInquisitionGrow 5000ms ease-in-out;
+    animation-delay: 5000ms;
+    animation-fill-mode: forwards;
+}
+
+.inner .presentBox .present {
+    background-color: #40793a;
+    position: absolute;
+    /*top: 50%;*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner .presentBox .present .ribbon {
+    background-color: #bc1120;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 3;
+    animation: presentRibbonFade 2000ms ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.inner .presentBox .present.top {
+    width: 450px;
+    height: 130px;
+    top: 196px;
+    animation: presentLidUp 2000ms ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.inner .presentBox .present.bottom {
+    box-sizing: border-box;
+    width: 420px;
+    height: 200px;
+    top: 360px;
+    border-top: 3px solid rgba(72, 72, 72, 0.9);
+    animation: presentBottomDown 2000ms ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes presentLidUp {
+    0% {
+        top: 196px;
+    }
+    33% {
+        top: 100px;
+    }
+    67% {
+        top: 0px;
+        background-color: transparent;
+        width: 450px;
+        height: 130px;
+    }
+    100% {
+        top: -100px;
+        background-color: transparent;
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes presentBottomDown {
+    0% {
+        top: 360px;
+    }
+    33% {
+        top: 460px;
+        border-top: none;
+
+    }
+    67% {
+        background-color: transparent;
+        top: 560px;
+        border-top: none;
+        width: 420px;
+        height: 200px;
+    }
+    100% {
+        top: 760px;
+        background-color: transparent;
+        display: none;
+        border-top: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+@keyframes presentRibbonFade {
+    0% {
+
+    }
+    33% {
+
+    }
+    67% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: transparent;
+        display: none;
+    }
+}
+
+@keyframes spanishInquisitionGrow {
+    0% {
+        width: 400px;
+        height: 300px;
+    }
+    100% {
+        width: 834px;
+        height: 600px;
+    }
+}
+
+@keyframes bodyBgTransition {
+    0% {
+
+    }
+    100% {
+        background-image: url(img/tomCruiseLaughing.jpg);
+    }
+}
+
+@keyframes headerFade {
+    0% {
+
+    }
+    100% {
+        color: transparent;
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
