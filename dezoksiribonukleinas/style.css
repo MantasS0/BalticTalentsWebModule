@@ -6,7 +6,179 @@ body {
     padding: 50px 50px 0;
 }
 
-header{
+header {
     background-color: #fff;
     padding: 20px 30px 150px 20px;
 }
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333333;
+
+}
+
+header nav .leftSide {
+    display: flex;
+    align-items: center;
+
+}
+
+header nav .leftSide li:not(:first-of-type):not(:last-of-type) {
+    margin-right: 43px;
+}
+
+header nav .leftSide .logo {
+    margin-right: 30px;
+    height: 50px;
+    width: auto;
+}
+
+header nav .rightSide {
+    display: flex;
+    align-items: center;
+}
+
+header nav .rightSide li:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+header nav .rightSide li img {
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 16px;
+    width: auto;
+}
+
+header nav .rightSide li img.liftUp {
+    margin-top: -4px;
+}
+
+header .inner {
+    width: 90%;
+    min-width: 1060px;
+    margin: 80px auto 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header .inner .shoe {
+    width: 69%;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+header .inner .rightSide {
+    width: 31%;
+}
+
+header .inner .rightSide .like {
+    width: 48px;
+    height: 48px;
+    border: solid 1px #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 43px;
+}
+
+header .inner .rightSide h2{
+    font-size: 25px;
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+header .inner .rightSide h3{
+    font-size: 35px;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+header .inner .rightSide .price{
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 28px;
+    display: block;
+}
+
+header .inner .rightSide .colors{
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 14px;
+    display: block;
+    text-transform: uppercase;
+}
+
+header .inner .rightSide .colors .blue{
+    color: #0089cf;
+}
+
+header .inner .rightSide .box{
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+    background-color: #f5f5f5;
+    border: solid 1px #e4e4e4;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+header .inner .rightSide .box img{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    bottom: 17px;
+}
+
+header .inner .rightSide .box.disabled{
+    filter: grayscale(100%);
+}
+
+header .inner .rightSide .size{
+    display: block;
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+header .inner .rightSide select{
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: 1px solid #e4e4e4;
+    padding: 20px 84px 20px 20px;
+    font-size: 14px;
+    color: #666666;
+    font: inherit;
+    text-transform: uppercase;
+
+    background-image: url(img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right  20px center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

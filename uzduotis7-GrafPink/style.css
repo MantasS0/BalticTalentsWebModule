@@ -59,10 +59,54 @@ header {
 
 header .bubbles {
     display: inline-block;
-    width: 124px;
-    height: 152px;
-    background-color: red;
-    margin-top: 230px;
+    width: 206px;
+    height: 202px;
+    margin-top: 205px;
+    position: relative;
+    /*animation: rotate 5s steps(50) infinite;*/
+    /*background-color: yellow;*/
+}
+
+header .bubbles:hover .bubbleTrajectory {
+    animation: rotate 5s steps(50) infinite;
+}
+
+
+header .bubbles .bubbleTrajectory{
+    position: absolute;
+}
+header .bubbles .bubbleTrajectory.one{
+    width: 150px;
+    height: 150px;
+    /*background-color: red;*/
+    left: -8px;
+    bottom: -8px;
+}
+header .bubbles .bubbleTrajectory.two{
+    width: 125px;
+    height: 125px;
+    /*background-color: blue;*/
+    top: -8px;
+    right: -3px;
+}
+header .bubbles .bubbleTrajectory.three{
+    width: 100px;
+    height: 100px;
+    /*background-color: green;*/
+    right: -4px;
+    bottom: 19px;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 header .bubbles .bubble{
@@ -70,22 +114,25 @@ header .bubbles .bubble{
     border-radius: 50%;
     box-sizing: border-box;
     position: absolute;
+    z-index: 5;
 }
 header .bubbles .bubble.one{
-    left: 0;
-    bottom: 0;
+    left: 33px;
+    bottom: 33px;
     width: 117px;
     height: 117px;
 }
+
 header .bubbles .bubble.two{
-    top: 0;
-    right: 5px;
+    top: 33px;
+    right: 33px;
     width: 92px;
     height: 92px;
 }
+
 header .bubbles .bubble.three{
-    right: 0;
-    bottom: 23px;
+    right: 29px;
+    bottom: 29px;
     width: 71px;
     height: 71px;
 }
@@ -94,7 +141,7 @@ header .bubbles .bubble.three{
 header h3 {
     text-transform: uppercase;
     font-weight: 500;
-    padding-top: 34px;
+    padding-top: 9px;
     padding-bottom: 19px;
     font-size: 50px;
     text-shadow: 1px 1px 13px rgba(0, 0, 0, 0.22);
@@ -144,16 +191,16 @@ section ul li div {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 52px;
-
-}
-
-section ul li div label {
-    padding-top: 12px;
     color: #fff;
+
 }
 
-section ul li div.red label {
-    color: rgba(255, 255, 255, 0.26);
+section ul.ellipses li div:hover{
+    filter: drop-shadow(1px 1px 15px rgba(0, 0, 0, 0.2));
+}
+
+section ul.ellipses li div:hover * {
+    filter: opacity(26%);
 }
 
 section ul li div.blue {
@@ -166,16 +213,36 @@ section ul li div.green {
 
 section ul li div.red {
     background-color: #ff5649;
+    position: relative;
+    text-align: center;
 }
 
-section ul li div.red:after {
+section ul li div.red img{
+    padding-left: 18px;
+}
+
+section ul li div.red:hover:after {
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text";
     color: #fff;
     font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: auto;
+    transform: translate(-50%,-50%);
 }
 
 section ul li div.yellow {
     background-color: #e48f23;
+}
+
+section ul.ellipses li div img{
+    padding-top: 12px;
+}
+
+section ul.ellipses li div label{
+    margin-top: 12px;
 }
 
 main {
@@ -264,11 +331,11 @@ footer ul.vertical.last ul li .twitter {
 }
 
 footer ul.vertical.last ul li .basketball {
-    background-image: url(img/dribbble.svg);
+    background-image: url(img/dribbble.png);
 }
 
 footer ul.vertical.last ul li .connections {
-    background-image: url(img/share.svg);
+    background-image: url(img/share.png);
 }
 
 footer ul.vertical.last ul {
@@ -284,32 +351,3 @@ footer ul.vertical {
     margin-top: 37px;
     margin-bottom: 34px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
