@@ -64,11 +64,11 @@ header .bubbles {
     margin-top: 205px;
     position: relative;
     /*animation: rotate 5s steps(50) infinite;*/
-    /*background-color: yellow;*/
+    /*background-color: white;*/
 }
 
 header .bubbles:hover .bubbleTrajectory {
-    animation: rotate 5s steps(50) infinite;
+    animation: rotate 4s steps(240) infinite;
 }
 
 
@@ -117,6 +117,7 @@ header .bubbles .bubble{
     z-index: 5;
 }
 header .bubbles .bubble.one{
+    /*background-color: rgba(255, 0, 0, 0.33);*/
     left: 33px;
     bottom: 33px;
     width: 117px;
@@ -124,6 +125,7 @@ header .bubbles .bubble.one{
 }
 
 header .bubbles .bubble.two{
+    /*background-color: rgba(0,255,0,0.33);*/
     top: 33px;
     right: 33px;
     width: 92px;
@@ -131,6 +133,7 @@ header .bubbles .bubble.two{
 }
 
 header .bubbles .bubble.three{
+    /*background-color: rgba(0,0,255,0.33);*/
     right: 29px;
     bottom: 29px;
     width: 71px;
