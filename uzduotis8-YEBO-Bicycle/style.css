@@ -14,7 +14,8 @@ header {
 }
 
 header nav {
-    width: 37.5%;
+    /*width: 37.5%;*/
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,14 @@ header nav ul li:not(.dot) {
 
 header nav ul li.dot {
     cursor: default;
+}
+
+header nav ul:first-of-type li:first-of-type {
+    padding-left: 40%;
+}
+
+header nav ul:last-of-type li:last-of-type {
+    padding-right: 40%;
 }
 
 section.paragraph {
@@ -334,7 +343,7 @@ section.manyPhotosGallery div.rightSide div.topSide .cover {
     transition: 1s;
 }
 
-section.manyPhotosGallery div.rightSide div.topSide:hover  .cover{
+section.manyPhotosGallery div.rightSide div.topSide:hover .cover {
     filter: opacity(0%);
 }
 
@@ -500,3 +509,152 @@ footer .rightSide span {
     padding-left: 80px;
     margin-right: 10px;
 }
+
+@media (min-width: 1025px) {
+
+
+}
+
+/*Tablet*/
+@media (max-width: 1024px) {
+
+    header nav ul {
+        font-size: 15px;
+    }
+
+
+}
+
+/*Mobile*/
+@media (max-width: 667px) {
+
+    header nav {
+        width: 90%;
+    }
+
+    header nav ul li.dot {
+        display: none;
+    }
+
+    header nav ul {
+        font-size: 16px;
+        flex-direction: column;
+    }
+
+    header nav ul li:first-of-type {
+        margin-bottom: 30px;
+    }
+
+    header nav ul:first-of-type li:first-of-type,
+    header nav ul:last-of-type li:last-of-type {
+        padding: 0;
+    }
+
+    header nav img {
+        max-width: 80px;
+        width: 25%;
+        height: auto;
+    }
+
+    section.paragraph .inner {
+        width: 90%;
+    }
+
+    section.paragraph div.inner h4 {
+        font-size: 18px;
+    }
+
+    section.paragraph div.inner p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    section.gallery {
+        flex-wrap: wrap;
+    }
+
+    section.gallery .leftSide.leftSide.leftSide{
+        width: 100%;
+        padding: 50% 0;
+    }
+
+
+    section.gallery .rightSide.rightSide.rightSide {
+        width: 100%;
+    }
+
+    section.gallery .middle.middle.middle {
+        width: 100%;
+    }
+
+    section.gallery .paragraph.paragraph.paragraph{
+        padding: 5%;
+    }
+
+    section.gallery.threeSegment .rightSide.rightSide{
+        padding: 50% 0;
+    }
+
+    section.paragraph.second .inner{
+        padding-top: 15%;
+        padding-bottom: 20%;
+    }
+
+    section.paragraph.second .inner .commentSelect{
+        margin-top: 15%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
