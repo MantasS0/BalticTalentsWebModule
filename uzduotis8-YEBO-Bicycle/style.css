@@ -276,76 +276,66 @@ section.manyPhotosGallery div.leftSide div.bottomSide {
 }
 
 section.manyPhotosGallery div.rightSide div.topSide {
-    background-image: url(img/Section4/rightTop-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
     cursor: pointer;
+    width: 100%;
+    overflow: hidden;
 }
 
-section.manyPhotosGallery div.rightSide div.topSide:not(cover):hover {
-    animation: shopTransition 2s steps(120) forwards;
+section.manyPhotosGallery div.rightSide div.topSide .shopBackground {
+    background-image: url(img/Section4/rightTop-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
 }
 
-@keyframes shopTransition {
-    0% {
-        background-size: 100%;
-
-    }
-    100% {
-        background-size: 120%;
-    }
+section.manyPhotosGallery div.rightSide div.topSide:hover .shopBackground {
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
-section.manyPhotosGallery div.rightSide div.topSide .shopWrapper{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-/*width: 19%;*/
-/*height: auto;*/
+section.manyPhotosGallery div.rightSide div.topSide .shopWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    z-index: 5;
 }
 
-section.manyPhotosGallery div.rightSide div.topSide:not(cover):hover .shopWrapper{
-animation: shopIconTransition 2s steps(120) forwards;
-}
-
-@keyframes shopIconTransition {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.5);
-
-    }
+section.manyPhotosGallery div.rightSide div.topSide:not(cover):hover .shopWrapper {
+    transform: translate(-50%, -50%) scale(1.5);
 }
 
 section.manyPhotosGallery div.rightSide div.topSide .cover {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     background-color: #64c29e;
     filter: opacity(80%);
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 2;
+    z-index: 3;
+    transition: 1s;
 }
 
-section.manyPhotosGallery div.rightSide div.topSide .cover:hover {
-    animation: coverTransition 2s steps(120) forwards;
-}
-
-@keyframes coverTransition {
-    0% {
-        filter: opacity(80%);
-    }
-    100% {
-        filter: opacity(0%);
-    }
+section.manyPhotosGallery div.rightSide div.topSide:hover  .cover{
+    filter: opacity(0%);
 }
 
 section.manyPhotosGallery div.rightSide div.topSide span {

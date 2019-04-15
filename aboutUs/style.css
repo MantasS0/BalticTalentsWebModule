@@ -225,41 +225,41 @@ section.team {
     line-height: 1.5;
 }
 
-footer .inner{
+footer .inner {
     width: 90%;
     max-width: 1060px;
     margin: auto;
     padding-top: 105px;
 }
 
-footer .inner .footerTop{
+footer .inner .footerTop {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(226, 4, 103, 0.6);
     padding-bottom: 60px;
 }
 
-footer .inner .quarter h4{
+footer .inner .quarter h4 {
     font-weight: 600;
     margin-bottom: 25px;
 }
 
-footer .inner .quarter li{
+footer .inner .quarter li {
     color: #d405b4;
     line-height: 2;
 }
 
-footer .inner .quarter{
+footer .inner .quarter {
     width: 23%;
 }
 
-footer .inner .quarter p{
+footer .inner .quarter p {
     color: #d405b4;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-footer .inner .quarter input{
+footer .inner .quarter input {
     background-color: lightgrey;
     width: 100%;
     border: none;
@@ -271,11 +271,11 @@ footer .inner .quarter input{
     padding-right: 43px;
 }
 
-footer .inputWrapper{
+footer .inputWrapper {
     position: relative;
 }
 
-footer .inputWrapper img{
+footer .inputWrapper img {
     height: 16px;
     width: auto;
     position: absolute;
@@ -284,17 +284,103 @@ footer .inputWrapper img{
     top: 13px;
 }
 
-footer .footerBottom{
+footer .footerBottom {
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
 }
 
-footer .footerBottom .socialIcon{
+footer .footerBottom .socialIcon {
     display: inline-block;
     margin-left: 10px;
     height: 32px;
     width: auto;
+}
+
+.sandwich {
+    height: 32px;
+    display: none;
+}
+
+/*Tablets*/
+@media (max-width: 1024px) {
+    header nav .rightSide {
+        display: none;
+    }
+
+    .sandwich {
+        display: block;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 667px) {
+    .phoneNumber,
+    header nav .leftSide .icon {
+        display: none;
+    }
+
+    header nav .leftSide .logo {
+        border: none;
+    }
+
+    header nav {
+        margin-bottom: 100px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header {
+        padding-bottom: 100px;
+    }
+
+    section .inner {
+        padding: 70px 0;
+    }
+
+    section .thirdsWrapper {
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+    }
+
+    section .thirdsWrapper .third {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    section .inner > p {
+        margin-bottom: 20px;
+    }
+
+    .cta .inner .leftSide {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .cta .inner .button {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin: auto;
+    }
+
+    footer .inner .footerTop {
+        display: none;
+
+    }
+
+    footer .inner {
+        padding: 0;
+    }
+
+    footer .footerBottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 
