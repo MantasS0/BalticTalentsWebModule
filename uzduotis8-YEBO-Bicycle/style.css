@@ -41,12 +41,14 @@ header nav ul li.dot {
     cursor: default;
 }
 
-header nav ul:first-of-type li:first-of-type {
-    padding-left: 40%;
+header nav ul:first-of-type {
+    padding-left: 20%;
+    padding-right: 5%;
 }
 
-header nav ul:last-of-type li:last-of-type {
-    padding-right: 40%;
+header nav ul:last-of-type {
+    padding-right: 20%;
+    padding-left: 5%;
 }
 
 section.paragraph {
@@ -246,7 +248,7 @@ section.manyPhotosGallery div.rightSide div.bottomSide {
     width: 100%;
     display: flex;
     height: 268px;
-
+    /*padding: 30% 0;*/
 }
 
 section.manyPhotosGallery div.leftSide div.topSide div,
@@ -328,6 +330,7 @@ section.manyPhotosGallery div.rightSide div.topSide .shopWrapper {
 }
 
 section.manyPhotosGallery div.rightSide div.topSide:not(cover):hover .shopWrapper {
+    /*transition: transform 1s;*/
     transform: translate(-50%, -50%) scale(1.5);
 }
 
@@ -512,7 +515,6 @@ footer .rightSide span {
 
 @media (min-width: 1025px) {
 
-
 }
 
 /*Tablet*/
@@ -522,6 +524,67 @@ footer .rightSide span {
         font-size: 15px;
     }
 
+    header nav ul:first-of-type {
+        padding-left: 10%;
+    }
+
+    header nav ul:last-of-type {
+        padding-right: 10%;
+    }
+
+    section.paragraph .inner {
+        width: 90%;
+        padding: 70px 0 90px;
+    }
+
+    section.paragraph div.inner h4 {
+        font-size: 18px;
+    }
+
+    section.paragraph div.inner p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    section.gallery .paragraph.paragraph.paragraph {
+        padding: 10%;
+    }
+
+    section.paragraph.second .inner {
+        padding-top: 7%;
+        padding-bottom: 10%;
+
+    }
+
+    section.manyPhotosGallery {
+        flex-wrap: wrap;
+    }
+
+    /*section.manyPhotosGallery div.middle {*/
+    /*flex-wrap: wrap;*/
+    /*width: 33.3%;*/
+    /*}*/
+    section.manyPhotosGallery.manyPhotosGallery.manyPhotosGallery div {
+        width: 100%;
+    }
+
+    section.manyPhotosGallery div.middle div {
+        /*width: 100%;*/
+        padding: 50% 0;
+    }
+
+    section.manyPhotosGallery div.rightSide div.topSide .shopWrapper span {
+        font-size: 18px;
+    }
+
+    section.manyPhotosGallery div.rightSide div.topSide .shopWrapper img {
+        width: 100px;
+        height: auto;
+    }
+
+    footer .rightSide span{
+        padding-left: 0;
+    }
 
 }
 
@@ -545,8 +608,8 @@ footer .rightSide span {
         margin-bottom: 30px;
     }
 
-    header nav ul:first-of-type li:first-of-type,
-    header nav ul:last-of-type li:last-of-type {
+    header nav ul:first-of-type,
+    header nav ul:last-of-type {
         padding: 0;
     }
 
@@ -556,28 +619,14 @@ footer .rightSide span {
         height: auto;
     }
 
-    section.paragraph .inner {
-        width: 90%;
-    }
-
-    section.paragraph div.inner h4 {
-        font-size: 18px;
-    }
-
-    section.paragraph div.inner p {
-        font-size: 16px;
-        text-align: justify;
-    }
-
     section.gallery {
         flex-wrap: wrap;
     }
 
-    section.gallery .leftSide.leftSide.leftSide{
+    section.gallery .leftSide.leftSide.leftSide {
         width: 100%;
         padding: 50% 0;
     }
-
 
     section.gallery .rightSide.rightSide.rightSide {
         width: 100%;
@@ -587,22 +636,54 @@ footer .rightSide span {
         width: 100%;
     }
 
-    section.gallery .paragraph.paragraph.paragraph{
+    section.gallery .paragraph.paragraph.paragraph {
         padding: 5%;
     }
 
-    section.gallery.threeSegment .rightSide.rightSide{
+    section.gallery.threeSegment .rightSide.rightSide {
         padding: 50% 0;
     }
 
-    section.paragraph.second .inner{
-        padding-top: 15%;
-        padding-bottom: 20%;
-    }
-
-    section.paragraph.second .inner .commentSelect{
+    section.paragraph.second .inner .commentSelect {
         margin-top: 15%;
     }
+
+    section.insertEmail .logo {
+        margin-top: 80px;
+    }
+
+    section.insertEmail .inputWrapper {
+        flex-direction: column;
+        margin-bottom: 80px;
+        width: 70%;
+        min-width: 300px;
+    }
+
+    section.insertEmail .inputWrapper .email {
+        padding: 0;
+        margin: 0 0 5px;
+        width: 100%;
+    }
+
+    section.insertEmail .inputWrapper .button{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .leftSide{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    footer div.leftSide,
+    footer div.middle,
+    footer div.rightSide{
+        margin-bottom: 20px;
+    }
+
 }
 
 
