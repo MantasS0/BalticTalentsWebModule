@@ -35,7 +35,7 @@ var vehicle4 = {
     registrationPlates: 'ZED420'
 };
 
-// registeredVehicles.add(vehicle4);
+registeredVehicles.push(vehicle4);
 
 for (var i = 0; i < registeredVehicles.length; i++) {
     var vehicleDistance = registeredVehicles[i].distance;
