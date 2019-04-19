@@ -296,6 +296,151 @@ section.mainSection img.city{
     margin-top: 24px;
 }
 
+section.features{
+    padding-top: 110px;
+    padding-bottom: 135px;
+}
+
+section.subList .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.features .picture{
+    padding-left: 41.7%;
+    padding-bottom: 27.9%;
+
+    /*width: 41%;*/
+    /*height: auto;*/
+    /*padding-bottom: 303px;*/
+    min-width: 452px;
+    min-height: 303px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 36px #9b9b9b;
+}
+
+section.subList .picture{
+    background-image: url(img/sl1.jpg);
+}
+
+section.features .inner > .paragraph{
+    width: 39.5%;
+}
+
+section.features .paragraph h3{
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+section.features .inner .paragraph .lineSeparator{
+    width: 64px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin-bottom: 31px;
+}
+
+section.features .inner .paragraph p{
+    font-size: 10px;
+    color: #86878b;
+    line-height: 20px;
+}
+
+section.subList .inner > .paragraph > p{
+    padding-bottom: 50px;
+}
+
+
+section.subList .paragraph .innerParagraph{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+section.subList .paragraph .innerParagraph .icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border: 2px solid #ff8b38;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+section.subList .paragraph .innerParagraph.one .icon{
+    background-image: url(img/cloudUpload.png);
+}
+
+section.subList .paragraph .innerParagraph.two .icon{
+    background-image: url(img/cloudDownload.png);
+}
+
+section.subList .paragraph .innerParagraph .paragraph {
+    width: 83%;
+    margin-bottom: 40px;
+}
+
+
+section.subList .paragraph .innerParagraph .paragraph h4{
+    font-weight: 600;
+    font-size: 11px;
+    padding-bottom: 4px;
+}
+
+section.standardPicture{
+    background-color: #f5f5f5;
+}
+
+section.standardPicture .inner div.picture{
+    background-image: url(img/sl2.jpg);
+}
+
+section.standardPicture .inner{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    justify-content: space-between;
+}
+
+section.standardPicture .inner .paragraph p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
