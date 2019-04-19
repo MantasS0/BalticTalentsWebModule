@@ -336,11 +336,11 @@ section.features .paragraph h3{
     padding-bottom: 30px;
 }
 
-section.features .inner .paragraph .lineSeparator{
+section .inner .lineSeparator{
     width: 64px;
     height: 2px;
     background-color: #ff8b38;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 
 section.features .inner .paragraph p{
@@ -409,6 +409,181 @@ section.standardPicture .inner{
 section.standardPicture .inner .paragraph p:not(:last-of-type) {
     margin-bottom: 20px;
 }
+
+section.raleway{
+    padding: 108px 0 95px;
+}
+
+section.raleway .inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.raleway .inner > h3{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+section.raleway .inner .lineSeparator{
+    margin-bottom: 20px;
+}
+
+section.raleway .inner > p,
+section.ourProcess p{
+    font-size: 10px;
+    color: #86878b;
+    line-height: 20px;
+}
+
+section.ourProcess p{
+    margin-bottom: 10px;
+}
+
+section.ourProcess ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 83px;
+}
+
+section.ourProcess ul li{
+    width: 32.27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.ourProcess  ul li .icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+    border: 2px solid #ff8b38;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+section.ourProcess  ul li.one .icon{
+    background-image: url(img/lightbulb.png);
+}
+
+section.ourProcess  ul li.two .icon{
+    background-image: url(img/keyboard.png);
+    background-size: 30px;
+}
+
+section.ourProcess  ul li.three .icon{
+    background-image: url(img/lightining.png);
+}
+
+section.ourProcess  ul li h4{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+section.pricing {
+    background-color: #f5f5f5;
+}
+
+section.pricing .inner > ul{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+section.pricing .inner > ul > li{
+    width: 31.36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.pricing .inner > ul > li h4{
+    width: 100%;
+    background-color: #333333;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 22px 0;
+    margin-bottom: 2px;
+}
+
+section.pricing .inner > ul > li .price{
+    background-color: #333333;
+    width: 100%;
+    color: #fff;
+}
+
+section.pricing .inner > ul > li .price .topSide{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+section.pricing .inner > ul > li .price .topSide .dollarSign{
+    font-size: 30px;
+    margin-bottom: 33px;
+}
+
+section.pricing .inner > ul > li .price .topSide .small{
+    font-size: 54px;
+}
+
+section.pricing .inner > ul > li .price .topSide .large{
+    font-size: 67px;
+    align-self: start;
+}
+
+section.pricing .inner > ul > li .price .bottomSide{
+    width: 100%;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10px;
+    margin-bottom: 22px;
+}
+
+section.pricing .inner > ul > li .popularityBanner{
+    width: 100%;
+    min-height: 5px;
+    background-color: #ff8b38;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+section.pricing .inner > ul > li .popularityBanner.popular{
+    padding: 15px 0;
+}
+
+section.pricing .inner > ul > li .perks{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #86878b;
+}
+
+section.pricing .inner > ul > li .perks li{
+    background-color: #fff;
+    padding: 15px 0;
+    margin-bottom: 1px;
+}
+
+
+
+
 
 
 
