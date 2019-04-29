@@ -1,4 +1,4 @@
-
+/*
 function reverse() {
     let input = document.getElementById('input').value.toString();
     let splitString = input.split("");
@@ -6,8 +6,31 @@ function reverse() {
     document.getElementById('output').value = reversedArray.join("");
 }
 
+function alphabetise(){
+    let input = document.getElementById('input').value.toString();
+    let splitString = input.split("");
+    let reversedArray = splitString.sort();
+    document.getElementById('output').value = reversedArray.join("");
+}
+*/
 
+function addHelp() {
 
+    let selected = document.getElementById('selectTemp').value;
+    console.log(selected);
+    if (selected === "celsius") {
+        document.getElementById('temp1').innerHTML = 'F';
+        document.getElementById('temp2').innerHTML = 'C';
+    } else if (selected === "fahrenheit") {
+        document.getElementById('temp1').innerHTML = 'C';
+        document.getElementById('temp2').innerHTML = 'F';
+    }
+}
+
+function convert() {
+/*    T(°C) = (T(°F) - 32) × 5/9     */
+    
+}
 
 
 /*

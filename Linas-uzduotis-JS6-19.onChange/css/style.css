@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    flex-direction: column;
+}
+
+ul li {
+    font-size: 25px;
+    font-weight: bold;
+}
