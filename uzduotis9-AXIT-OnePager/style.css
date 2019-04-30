@@ -500,6 +500,11 @@ section.pricing .inner > ul{
     justify-content: space-between;
 }
 
+section.pricing .inner .lineSeparator + p{
+    margin-bottom: 80px;
+}
+
+
 section.pricing .inner > ul > li{
     width: 31.36%;
     display: flex;
@@ -581,15 +586,111 @@ section.pricing .inner > ul > li .perks li{
     margin-bottom: 1px;
 }
 
+section.testimonials .inner .lineSeparator + p{
+    margin-bottom: 55px;
+}
+
+section.testimonials .inner ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.testimonials .inner ul li{
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    width: 273px;
+}
+
+section.testimonials .inner ul li .commentBubble{
+    width: 100%;
+    /*height: auto;*/
+    /*padding: 20px 13px 30px;*/
+    /*background-image: url(img/commentBubble.png);*/
+    /*background-position: center;*/
+    /*background-size: auto;*/
+    /*background-repeat: no-repeat;*/
+}
 
 
+section.testimonials .inner ul li .commentBubble p{
+    /*display: block;*/
+    position: absolute;
+    top: 20px;
+    right: 13px;
+    bottom: 30px;
+    left: 13px;
+    z-index: 5;
+    font-size: 10px;
+    color: #86878b;
+    line-height: 17px;
+    font-style: italic;
+}
+
+section.testimonials .inner ul li .bottomSide{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section.testimonials .inner ul li .bottomSide .leftSide{
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #86878b;
+    margin-right: 15px;
+}
+
+section.testimonials .inner ul li .bottomSide .rightSide h4{
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+    }
+
+section.testimonials .inner ul li .bottomSide .rightSide p{
+    font-size: 10px;
+    color: #86878b;
+}
 
 
+section.customize.raleway {
+    background-color: #86878b;
+    background-image: url(img/headerCover.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 75px;
+    padding-bottom: 63px;
+    color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+section.customize.raleway .inner .lineSeparator{
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
 
 
+section.customize .inner p{
+    margin-bottom: 37px;
+    color: #fff;
+}
 
-
-
+section.customize .inner button{
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 14px 30px 13px;
+    border: 2px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    background: none;
+    font-size: 11px;
+    font-weight: 600;
+}
 
 
 

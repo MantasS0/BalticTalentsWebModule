@@ -6,7 +6,27 @@ body{
     flex-direction: column;
 }
 
-ul li {
-    font-size: 25px;
-    font-weight: bold;
+select {
+    margin-right: 10px;
 }
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.columnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
