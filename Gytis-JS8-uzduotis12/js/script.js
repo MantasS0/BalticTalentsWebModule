@@ -14,9 +14,12 @@ const rectangles = [
     {width: 40, height: 120}
 ];
 
-var biggestRectangleArea = 0;
-var biggestRectangleIndex;
+let biggestRectangleArea = 0;
+let biggestRectangleIndex;
 
+const inputWidth = document.getElementById('width');
+const inputHeight = document.getElementById('height');
+const button = document.getElementById('button');
 
 
 function getRectanglePerimeter(width, height) {
