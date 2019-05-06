@@ -32,7 +32,7 @@ class Student {
     getAverage() {
         let sum = 0;
         for (let grade of this.grades) {
-            console.log(grade);
+            // console.log(grade);
             sum += grade;
         }
         return (sum / this.grades.length).toFixed(1);
@@ -43,7 +43,8 @@ class Student {
     }
 
     printData() {
-        console.log(`Student: ${this.name} ${this.surname.charAt(0)}. AVG.Mark.: ${this.getAverage()}`)
+        console.log(`Student: ${this.name} ${this.surname.charAt(0)}. 
+        AVG.Mark.: ${this.getAverage()} ${this.getAverage()>=7? 'Saunuolis!':''}`);
     }
 
     compareToTheDeath(student){
@@ -54,11 +55,11 @@ class Student {
         } else if (this.getAverage()<student.getAverage()){
             winner = student;
         } else {
-            console.log('Both are equal!')
+            console.log('Both are equal!');
         }
 
         if (winner!==undefined) {
-            console.log(`Student ${winner.name} ${winner.surname.charAt(0)}. won the battle with AVG.Mark. of ${winner.getAverage()}`)
+            console.log(`Student ${winner.name} ${winner.surname.charAt(0)}. won the battle with AVG.Mark. of ${winner.getAverage()}`);
         }
     }
 }
