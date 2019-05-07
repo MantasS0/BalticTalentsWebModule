@@ -17,7 +17,9 @@ let city1 = new City('Kaunas', 0.13, 0.46, 1.06);
 city1.addHouse(new House('Pilies g. 1', 'Petras Laidosas', 203));
 city1.addHouse(new House('Amaliu g. 54a', 'Virginija Morkute', 109));
 city1.addHouse(new House('Rotuses a. 1', 'Vytautas Lanzbergis', 606));
-city1.printData();
+
+const button = document.getElementById('printData');
+button.addEventListener('click',() => city1.printData());
 
 
 

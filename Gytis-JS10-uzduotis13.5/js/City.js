@@ -55,6 +55,7 @@ class City {
     }
 
     printData() {
+        /*To Console*/
         console.log(`Miestas: ${this.name}\nMieste yra ${this.houses.length} namu:`);
         this.houses.forEach((house) => {
             console.log(`          Adresas: ${house.address}\n
@@ -65,5 +66,54 @@ class City {
         console.log(`        Miesto elektros saskaita: ${this.taxForWholeCity(this.tariffs.electricity).toFixed(2)}\n
         Miesto duju saskaita: ${this.taxForWholeCity(this.tariffs.gas).toFixed(2)}\n
         Miesto vandens saskaita: ${this.taxForWholeCity(this.tariffs.water).toFixed(2)}`)
+
+
+        /*To HTML*/
+        const countryDiv = document.getElementById('country');
+        let houseListId = `${this.name}List`;
+        countryDiv.innerHTML += `<div class="inner">
+<h3>Miestas: ${this.name}</h3>
+<h4>Mieste yra ${this.houses.length} namu:</h4>
+<ul class="houseList">
+</ul>
+<ul class="municipalTaxes">
+<li id="electricity">Miesto elektros saskaita: ${this.taxForWholeCity(this.tariffs.electricity).toFixed(2)}</li>
+<li id="gas">Miesto duju saskaita: ${this.taxForWholeCity(this.tariffs.gas).toFixed(2)}</li>
+<li id="water">Miesto vandens saskaita: ${this.taxForWholeCity(this.tariffs.water).toFixed(2)}</li>
+</ul>
+</div>`;
+
+        document.querySelector('ul.houseList').setAttribute("id", houseListId);
+
+        this.houses.forEach((house) => {
+            document.getElementById(houseListId).innerHTML += `<li>Adresas: ${house.address}</li>
+          <li>Savininkas: ${house.owner}</li>
+          <li>Bendras namo plotas: ${house.area}</li>
+          <li>--------------------------------</li>`;
+        });
+
+        document.querySelector('h3').style.cssText = 'font-size: 21px; font-weight: 600';
+        document.querySelector('h4').style.fontSize = '18px';
+        document.querySelector('h4').style.fontWeight = '600';
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
