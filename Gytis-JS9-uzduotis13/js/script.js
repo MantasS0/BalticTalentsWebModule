@@ -44,21 +44,21 @@ class Student {
 
     printData() {
         console.log(`Student: ${this.name} ${this.surname.charAt(0)}. 
-        AVG.Mark.: ${this.getAverage()} ${this.getAverage()>=7? 'Saunuolis!':''}`);
+        AVG.Mark.: ${this.getAverage()} ${this.getAverage() >= 7 ? 'Saunuolis!' : ''}`);
     }
 
-    compareToTheDeath(student){
+    compareToTheDeath(student) {
         let winner = undefined;
 
-        if (this.getAverage()>student.getAverage()){
+        if (this.getAverage() > student.getAverage()) {
             winner = this;
-        } else if (this.getAverage()<student.getAverage()){
+        } else if (this.getAverage() < student.getAverage()) {
             winner = student;
         } else {
             console.log('Both are equal!');
         }
 
-        if (winner!==undefined) {
+        if (winner !== undefined) {
             console.log(`Student ${winner.name} ${winner.surname.charAt(0)}. won the battle with AVG.Mark. of ${winner.getAverage()}`);
         }
     }
@@ -67,10 +67,10 @@ class Student {
 let student1 = new Student('Marius', 'Taurutis', [10, 10, 8, 8]);
 student1.printData();
 
-let student2 = new Student('Arunas', 'Botagas',[]);
+let student2 = new Student('Arunas', 'Botagas', []);
 
-student2.addGrade(9);
-student2.addGrade(8);
+student2.addGrade(2);
+student2.addGrade(5);
 student2.addGrade(7);
 student2.addGrade(6);
 
