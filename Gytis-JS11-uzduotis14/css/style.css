@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons div{
+    margin: 5px;
+    background-color: lightgrey;
+    padding: 5px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.buttons div:hover{
+    filter: brightness(1.05);
+
+}
+
+.buttons div:active{
+    filter: brightness(0.5);
+    border: 1px solid #e8e8e8
+}
+
