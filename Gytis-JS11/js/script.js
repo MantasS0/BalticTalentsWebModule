@@ -10,13 +10,12 @@ function sendMessage() {
         messageInput.style.border = 'none';
         console.log(messageInput.value);
         chatBox.innerHTML += `<div class="message">YOU: ${messageInput.value}</div>`;
-        messageInput.value = '';
 
         const words = messageInput.value.split(' ');
+        messageInput.value = '';
 
         possibleWords.push(...words);
         chatBox.innerHTML += `<div class="message">BOT: ${generateRandomMessage()}</div>`;
-
     } else {
         messageInput.style.border = '2px solid red';
     }
