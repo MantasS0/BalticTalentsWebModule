@@ -1,3 +1,10 @@
+
+const ServiceTypes = {
+    Electricity: 'electricity',
+    Gas: 'gas',
+    Water: 'water'
+};
+
 class City {
     /**
      * @param {string} cityName
@@ -24,19 +31,20 @@ class City {
 
     /**
      *
-     * @param service
+     * @param serviceType
      * @returns {number}
      */
-    taxForWholeCity(service) {
+    taxForWholeCity(serviceType) {
+
         let tariffCoefficient;
-        if (service === this.tariffs.electricity) {
+        if (serviceType === this.tariffs.electricity) {
             tariffCoefficient = this.tariffs.electricity;
-        } else if (service === this.tariffs.gas) {
+        } else if (serviceType === this.tariffs.gas) {
             tariffCoefficient = this.tariffs.gas;
-        } else if (service === this.tariffs.water) {
+        } else if (serviceType === this.tariffs.water) {
             tariffCoefficient = this.tariffs.water;
         } else {
-            console.log('Incorrect service supplied');
+            console.log('Incorrect serviceType supplied');
             return null;
         }
         return this.getAllHousesSummedArea() * tariffCoefficient;
@@ -65,11 +73,13 @@ class City {
         });
         console.log(`        Miesto elektros saskaita: ${this.taxForWholeCity(this.tariffs.electricity).toFixed(2)}\n
         Miesto duju saskaita: ${this.taxForWholeCity(this.tariffs.gas).toFixed(2)}\n
-        Miesto vandens saskaita: ${this.taxForWholeCity(this.tariffs.water).toFixed(2)}`)
+        Miesto vandens saskaita: ${this.taxForWholeCity(this.tariffs.water).toFixed(2)}`);
 
 
         /*To HTML*/
         const countryDiv = document.getElementById('country');
+
+
         let houseListId = `${this.name}List`;
         countryDiv.innerHTML += `<div class="inner">
 <h3>Miestas: ${this.name}</h3>
