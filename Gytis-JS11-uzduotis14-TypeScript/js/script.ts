@@ -13,7 +13,7 @@ class Car {
         this.carDistanceTraveled = this.carSpeed * time;
     }
 
-    printData() {
+    printData(): void {
         console.log(`Car Name: ${this.carName}
         Car speed: ${this.carSpeed}
         Car distance traveled: ${this.carDistanceTraveled}`);
