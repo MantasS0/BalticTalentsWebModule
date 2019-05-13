@@ -31,3 +31,4 @@ buttonRace.addEventListener('click', function () {
         car.printData();
     });
 });
+//# sourceMappingURL=script.js.map
