@@ -25,21 +25,28 @@ const gameData = {
 
 };
 
+
 class Game {
+
+    // var constantGameStateChecker = setInterval(()=>{this.checkGameState();},200);
+
     constructor() {
+        this.generateNewWord();
         UI.difficultyButtons.buttonEasy.addEventListener('click', this.setDifficulty.bind(this));
         UI.difficultyButtons.buttonMedium.addEventListener('click', this.setDifficulty.bind(this));
         UI.difficultyButtons.buttonHard.addEventListener('click', this.setDifficulty.bind(this));
 
-        this.generateNewWord();
-
         document.addEventListener('keypress', this.checkKey.bind(this));
 
-        setInterval(() => {
-            this.addProgress(0.3);
-            this.checkGameState();
-        }, 100)
+        /*
+                setInterval(() => {
+                    // this.addProgress(0.3);
+                    this.checkGameState();
+                }, 100)
+        */
+
     }
+
 
     setDifficulty(e) {
         let pressedButton = e.target.className;
@@ -108,25 +115,31 @@ class Game {
 
     checkGameState() {
         if (this.gameLost()) {
-            let randomIndex = Math.floor(Math.random() * gameData.looseResultMessage.length);
+            clearInterval();
+            const randomIndex = Math.floor(Math.random() * gameData.looseResultMessage.length);
             UI.resultMessage.innerHTML = gameData.looseResultMessage[randomIndex];
-            setTimeout(this.generateNewWord(),3000);
-        }
-
-        if (this.gameWon()) {
-
-            let randomIndex = Math.floor(Math.random() * gameData.looseResultMessage.length);
-
-            if (gameData.difficulty === 'easy'){
+            setTimeout(() => {
+                this.generateNewWord();
+                clearTimeout();
+            }, 3000);
+        }else if (this.gameWon()) {
+            clearInterval();
+            if (gameData.difficulty === 'easy') {
+                const randomIndex = Math.floor(Math.random() * gameData.winResultMessage.easy.length);
                 UI.resultMessage.innerHTML = gameData.winResultMessage.easy[randomIndex];
-            } else if (gameData.difficulty === 'medium'){
+            } else if (gameData.difficulty === 'medium') {
+                const randomIndex = Math.floor(Math.random() * gameData.winResultMessage.medium.length);
                 UI.resultMessage.innerHTML = gameData.winResultMessage.medium[randomIndex];
-            } else if (gameData.difficulty === 'hard'){
+            } else if (gameData.difficulty === 'hard') {
+                const randomIndex = Math.floor(Math.random() * gameData.winResultMessage.hard.length);
                 UI.resultMessage.innerHTML = gameData.winResultMessage.hard[randomIndex];
             }
-            setTimeout(this.generateNewWord(),3000);
-        }
+            setTimeout(() => {
+                this.generateNewWord();
+                clearTimeout();
+            }, 3000);
 
+        }
     }
 
     addProgress(amount) {
@@ -152,17 +165,17 @@ class Game {
     }
 
     generateNewWord() {
+        gameData.progress = 0;
+        this.drawProgress();
         const randomWordIndex = Math.floor(Math.random() * gameData.possibleWords.length);
         gameData.currentWord = gameData.possibleWords[randomWordIndex];
-        gameData.progress = 0;
-
-        UI.resultMessage.innerHTML = "";
-        this.drawProgress();
         this.generateLetters();
+        UI.resultMessage.innerHTML = "";
     }
 
 
 }
+
 
 new Game();
 
