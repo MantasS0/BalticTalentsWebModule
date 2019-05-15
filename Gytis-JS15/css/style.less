@@ -1,0 +1,90 @@
+@mainColor: #3498db;
+
+.paragraph(@textColor: #3498db) {
+  line-height: 1.5;
+  color: @textColor;
+  padding: 0 20px;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+input {
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  width: 400px;
+  display: block;
+  margin: 50px auto;
+  outline: none;
+  font-size: 24px;
+  font: inherit;
+}
+
+.button {
+  width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  background-color: #1abc9c;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #e74c3c;
+  }
+}
+
+.cocktails {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .cocktail {
+    width: 45%;
+    background-color: #fff;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: @mainColor;
+      padding: 0 20px;
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    p {
+      .paragraph();
+      margin-bottom: 15px;
+    }
+
+    .ingredients {
+      .paragraph(#27ae60);
+      padding-bottom: 20px;
+    }
+
+  }
+}
+

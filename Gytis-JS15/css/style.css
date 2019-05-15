@@ -1,0 +1,81 @@
+body {
+  background-color: #ecf0f1;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+input {
+  border: none;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  width: 400px;
+  display: block;
+  margin: 50px auto;
+  outline: none;
+  font-size: 24px;
+  font: inherit;
+}
+.button {
+  width: 300px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 50px auto;
+  background-color: #1abc9c;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #e74c3c;
+}
+.cocktails {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.cocktails h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+.cocktails .cocktail {
+  width: 45%;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.cocktails .cocktail img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cocktails .cocktail h3 {
+  color: #3498db;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cocktails .cocktail p {
+  line-height: 1.5;
+  color: #3498db;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+.cocktails .cocktail .ingredients {
+  line-height: 1.5;
+  color: #27ae60;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
