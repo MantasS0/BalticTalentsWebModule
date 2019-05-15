@@ -14,6 +14,15 @@ const gameData = {
     currentWord: 'balionas',
     progress: 0,
     difficulty: 'easy',
+    difficultyTimer: function (difficulty) {
+        if (difficulty === 'easy') {
+            return 0.1;
+        } else if (difficulty === 'medium') {
+            return 0.3;
+        } else if (difficulty === 'hard') {
+            return 0.5;
+        }
+    },
     possibleWords: ['balionas', 'stalas', 'projektorius', 'lsd', 'pica', 'kebabas', 'alus'],
     looseResultMessage: ['Failure!', 'You are as smart as a potato', 'Congratulations, you are mentally challenged',
         'A kindergartner is smarter then you', 'You are a disgrace', 'You are a waste of oxygen'],
@@ -51,6 +60,7 @@ const gameSounds = {
     }
 };
 
+var constantGameStateChecker;
 
 class Game {
 
@@ -70,6 +80,7 @@ class Game {
                     this.checkGameState();
                 }, 100)
         */
+
 
     }
 
@@ -145,7 +156,7 @@ class Game {
 
     checkGameState() {
         if (this.gameLost()) {
-            clearInterval();
+            clearInterval(constantGameStateChecker);
             UI.gameAudio.src = 'sounds/lose.mp3';
             UI.gameAudio.load();
             UI.gameAudio.play();
@@ -157,7 +168,7 @@ class Game {
                 clearTimeout();
             }, 4000);
         } else if (this.gameWon()) {
-            clearInterval();
+            clearInterval(constantGameStateChecker);
             UI.gameAudio.src = 'sounds/win.mp3';
             UI.gameAudio.load();
             UI.gameAudio.play();
@@ -202,12 +213,17 @@ class Game {
     }
 
     generateNewWord() {
+        clearInterval(constantGameStateChecker);
         gameData.progress = 0;
         this.drawProgress();
         const randomWordIndex = Math.floor(Math.random() * gameData.possibleWords.length);
         gameData.currentWord = gameData.possibleWords[randomWordIndex];
         this.generateLetters();
         UI.resultMessage.innerHTML = "";
+        constantGameStateChecker = setInterval(() => {
+            this.addProgress(gameData.difficultyTimer(gameData.difficulty));
+            this.checkGameState();
+        }, 500);
     }
 
 
