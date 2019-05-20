@@ -1,0 +1,293 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f7f9fc;
+  font-weight: 400;
+}
+
+body > .inner, footer .inner {
+  width: 70%;
+  max-width: 950px;
+  margin: 80px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      box-sizing: border-box;
+      padding: 11px 0;
+      cursor: pointer;
+
+      &:not(first-of-type) {
+        margin-left: 33px;
+      }
+
+      &.active {
+        color: #bdbdbd;
+      }
+
+      &:hover {
+        border-bottom: 3px solid #5c6bc0;
+      }
+    }
+  }
+}
+
+section {
+  background-color: #fff;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
+
+  .picture {
+    height: 535px;
+    //padding-top: 38%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &.two .picture {
+    background-image: url(../img/postTwoPicture.png);
+  }
+
+  .inner {
+    padding: 60px 0 80px;
+
+    .label {
+      display: inline-block;
+      color: #fff;
+      background-color: #5c6bc0;
+      text-transform: capitalize;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 11px 12px 10px;
+      position: absolute;
+      top: 20px;
+      right: -12px;
+      z-index: 5;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 750px;
+      margin: 0 auto;
+
+      .date {
+        color: #bdbdbd;
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 13px;
+      }
+
+      h2 {
+        font-size: 29px;
+        font-weight: 700;
+        line-height: 44px;
+        margin-bottom: 40px;
+      }
+
+      .lineSeparator {
+        width: 100%;
+        height: 2px;
+        background-color: #eeeeee;
+        margin-bottom: 30px;
+      }
+
+      p {
+        line-height: 2;
+        font-size: 13px;
+        margin-bottom: 18px;
+
+        &.summary {
+          font-style: italic;
+          font-size: 18px;
+          color: #7f7f7f;
+        }
+
+        &:last-of-type {
+          margin-bottom: 50px;
+        }
+      }
+
+      .flexContainer {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+
+        a.readMore {
+          text-transform: uppercase;
+          color: #5c6bc0;
+          font-weight: 700;
+          font-size: 15px;
+        }
+
+        ul.hashtags li {
+          display: inline-block;
+          font-size: 11px;
+          color: #b2b2b2;
+
+          &:not(first-of-type) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+ul.pagination {
+  display: flex;
+  text-align: center;
+  margin: 20px 0 115px;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.08);
+
+    &:not(:first-of-type) {
+      margin-left: 16px;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: #5c6bc0;
+    }
+  }
+}
+
+footer {
+  background-color: #5c6bc0;
+  padding: 67px 0 78px;
+
+
+  .inner {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 27px;
+      font-weight: 700;
+      font-style: italic;
+      color: #4a569a;
+      margin-bottom: 65px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 45px;
+
+      li {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+        color: #fff;
+
+        &:not(first-of-type) {
+          margin-left: 33px;
+        }
+
+        &.active {
+          filter: opacity(0.4);
+        }
+      }
+    }
+
+    .lineSeparator {
+      background-color: #000;
+      filter: opacity(0.06);
+      width: 100%;
+      height: 2px;
+      margin-bottom: 40px;
+
+      &.ninetyPercent {
+        width: 90%;
+      }
+    }
+
+    p {
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 2;
+      color: #fff;
+      filter: opacity(0.4);
+      margin-bottom: 40px;
+
+      a.creatorLink {
+        font-weight: 700;
+        filter: opacity(1);
+      }
+    }
+
+    .social {
+      display: flex;
+
+      img:not(first-of-type) {
+        margin-left: 21px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
