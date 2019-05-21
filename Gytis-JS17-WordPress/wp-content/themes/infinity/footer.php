@@ -6,15 +6,7 @@
         <img src="<?php echo get_theme_mod('footer_image'); ?>">
 
         <nav class="menu" >
-            <ul >
-                <li class="active" > Home</li >
-                <li class="" > About</li >
-                <li class="" > Archive</li >
-                <li class="" > Contact</li >
-                <li class="" >
-                    <img alt = "search" title = "search" class="searchIcon" src = "<?php echo get_template_directory_uri(); ?>/img/searchWhite.png" >
-                </li >
-            </ul >
+            <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
         </nav >
 
         <div class="lineSeparator" ></div >

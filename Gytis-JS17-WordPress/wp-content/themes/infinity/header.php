@@ -18,7 +18,7 @@
 <body>
 <div class="inner">
     <header>
-        <h1>Palo Alto</h1>
+        <h1><?php echo get_theme_mod('header_text_main'); ?></h1>
         <nav>
 <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
         </nav>

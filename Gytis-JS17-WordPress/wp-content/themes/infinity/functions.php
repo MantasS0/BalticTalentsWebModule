@@ -48,9 +48,48 @@ function register_my_customizer($wp_customize) {
         'settings' => 'footer_color'
     ]));
 
+    //sukuriame skyriu, kuriame bus nustatymai
+    $wp_customize->add_section('sectionTwo_section', [
+        'title' => 'Section two nustatymai',
+        'priority' => 2
+    ]);
+
+    // pridedame section two image nustatyma
+    $wp_customize->add_setting('sectionTwo_image', [
+        'transport' => 'refresh'
+    ]);
+
+    //pridedame galimybe keisti section two image nustatyma
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'sectionTwo_image', [
+        'label' => 'Section two paveikslelis',
+        'section' => 'sectionTwo_section',
+        'settings' => 'sectionTwo_image'
+    ]));
+
+    //sukuriame skyriu, kuriame bus nustatymai
+    $wp_customize->add_section('header_section', [
+        'title' => 'Headerio nustatymai',
+        'priority' => 3
+    ]);
+
+    // pridedame headerio text nustatyma
+    $wp_customize->add_setting('header_text_main', [
+        'default' => 'Palo Alto',
+        'transport' => 'refresh'
+    ]);
+
+    //pridedame galimybe keisti headerio text nustatyma
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'header_text_main', [
+        'label' => 'Header tekstas',
+        'section' => 'header_section',
+        'settings' => 'header_text_main',
+        'type' => 'text'
+    ]));
 
 }
 
 add_action('customize_register', 'register_my_customizer');
+
+add_theme_support('post-thumbnails');
 
 ?>
